@@ -1,0 +1,17 @@
+{
+    "name": "draperstudio/laravel-mentions",
+    "description": "Mentions based on Eloquent models for Laravel 5.",
+    "require": {
+        "php": ">=5.5.0",
+        "illuminate/support": "~5.0",
+        "laravelcollective/html": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DraperStudio\\Mentions\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    }
+}
