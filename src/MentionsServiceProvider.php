@@ -25,12 +25,12 @@ class MentionsServiceProvider extends ServiceProvider
     public function boot()
     {
         $config = realpath(__DIR__.'/../config/mentions.php');
-        $views  = realpath(__DIR__.'/../resources/views');
+        $views = realpath(__DIR__.'/../resources/views');
         $script = realpath(__DIR__.'/../resources/assets');
 
         $this->publishes([
             $config => config_path('mentions.php'),
-            $views  => base_path('resources/views/vendor/mentions'),
+            $views => base_path('resources/views/vendor/mentions'),
             $script => public_path('scripts'),
         ]);
 

@@ -15,9 +15,9 @@ class ApiController extends Controller
     public function index($type, Request $request)
     {
         try {
-            $query  = $request->get('q');
+            $query = $request->get('q');
             $column = $request->get('c');
-            $model  = app()->make(config('mentions.'.$type));
+            $model = app()->make(config('mentions.'.$type));
 
             $records = $model->where($column, 'LIKE', "%$query%")
                                 ->get([$column]);
