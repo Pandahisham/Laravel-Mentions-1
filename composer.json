@@ -3,8 +3,8 @@
     "description": "Mentions based on Eloquent models for Laravel 5.",
     "require": {
         "php": ">=5.5.0",
-        "illuminate/support": "~5.0",
-        "laravelcollective/html": "~5.0"
+        "illuminate/support": "~5.0|~5.1",
+        "laravelcollective/html": "~5.0|~5.1"
     },
     "autoload": {
         "psr-4": {
